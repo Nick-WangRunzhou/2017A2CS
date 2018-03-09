@@ -10,6 +10,18 @@ class LibraryItem:
     def GetTitle(self):
         return (self.__Title)
 
+    def GetAuthor(self):
+        return (self.__Author__Artist)
+
+    def GetItemID(self):
+        return (self.__ItemID)
+
+    def GetOnLoan(self):
+        return (self.__OnLoan)
+
+    def GetDueDate(self):
+        return (self.__DueDate)
+
     def Borrowing(self):
         self.__OnLoan = True
         self.__DueDate = self.__DueDate + datetime.timedelta(weeks=3)
@@ -26,25 +38,29 @@ class Book(LibraryItem):
         LibraryItem.__init__(self,t,a,i)
         self.__IsRequested = False
         self.__RequestedBy = 0
+
     def GetIsRequested(self):
         return(self.__IsRequested)
+
     def SetIsRequested(self):
         self.__IsRequested = True
 
 class CD(LibraryItem):
+
     def __init__(self,t,a,i):
         LibraryItem.__init__(self,t,a,i)
         self.__Genre = ''
+
     def GetGenre(self):
         return(self.__Genre)
+
     def SetGenre(self,g):
         self.__Genre = g
 
 def main():
-    ThisBook = Book('Computing','Sylvia',1234)
-    ThisCD = CD('Let it be','Beatles',2345)
+    ThisBook = Book('A-Level Computer Science','Cambridge International Examinations',1111)
+    ThisCD = CD('As Long As You Love Me','Justin Biber',1234)
     ThisBook.PrintDetails()
     ThisCD.PrintDetails()
-
 main()
 
