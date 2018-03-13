@@ -19,3 +19,10 @@ class LibraryItem:
                 print(self.__DueDate, ' ; Borrower: ',self.__BorrowerID)
 
         def main():
+            ThisBook = Book("Computing", "Sylvia", 1234)
+            ThisBook.PrintDetails()
+            NewBorrower = Borrower("Fred", "adc@cie", 123)
+            ThisBook.Borrowing(123)
+            NewBorrower.UpdateItemsOnLoan(1)
+            ThisBook.PrintDetails()
+            NewBorrower.PrintDetails()
