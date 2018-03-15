@@ -1,0 +1,55 @@
+Task 1.1
+The method applies to processing of any data structure or data stream that is describable as a hierarchical structure of sequential, 
+optional and iterated elements. This could be a stream of messages that a process reads to invoke and coordinate other modules or 
+objects, or it could be a string of characters in parameters passed to a single operation on an "object" coded in an object-oriented 
+programming language.
+
+Task 1.2 
+* means repetition, it shows the repeated components
+
+¡£means selection, it shows where the only components is chosen
+
+Task 1.3
+WHILE  There are Staffs
+	CALL ReadSalary()
+	IF Salary > 50 
+		THEN	
+			IF Salary >= 90 
+				THEN
+					Role = Project Manager
+				ELSE 
+					Role = Lead Developed 
+			ENDIF
+		ELSE
+			Role = Manager
+	ENDIF
+ENDWHILE
+
+Task 1.4
+        Salary > 50
+     FALSE             TRUE                   
+Assign Manager       Salary >=90   
+           	FALSE                    TRUE
+              Salary >70          Assign Project Manager
+       FALSE                    TRUE 
+Assign Lead Developed      Assign Consultant 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
