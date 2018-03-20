@@ -33,7 +33,35 @@ Assign Manager       Salary >=90
               Salary >70          Assign Project Manager
        FALSE                    TRUE 
 Assign Lead Developed      Assign Consultant 
+
+Task 1.5
+IF Salary >= 90 
+	THEN 
+		Role ¡û ProjectManager 
+	ELSE 
+		IF Salary > 70 
+			THEN 
+				Role ¡û Consultant 
+			ELSE 
+				Role ¡û LeadDeveloper 
+		ENDIF 
+ENDIF
+
  
+Task 1.6
+
+def determinerole(salary):
+    if salary>50:
+        if salary>70:
+            if salary>=90
+                return 'projectmanager'
+            else:
+                return 'consultant'
+        else:
+            return 'leaddeveloper'
+    else:
+        return 'manager'
+
 
 
 
