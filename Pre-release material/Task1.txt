@@ -30,20 +30,20 @@ Task 1.4
      FALSE             TRUE                   
 Assign Manager       Salary >=90   
            	FALSE                    TRUE
-              Salary >70          Assign Project Manager
-       FALSE                    TRUE 
-Assign Lead Developed      Assign Consultant 
+              Salary >70          Assign Project Manager 。
+       FALSE                    TRUE 
+Assign Lead Developed 。    Assign Consultant 。
 
 Task 1.5
 IF Salary >= 90 
 	THEN 
-		Role ¡û ProjectManager 
+		Role = ProjectManager 
 	ELSE 
 		IF Salary > 70 
 			THEN 
-				Role ¡û Consultant 
+				Role = Consultant 
 			ELSE 
-				Role ¡û LeadDeveloper 
+				Role = LeadDeveloper 
 		ENDIF 
 ENDIF
 
