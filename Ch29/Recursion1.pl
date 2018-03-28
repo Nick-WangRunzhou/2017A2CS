@@ -37,7 +37,8 @@ triangle(1, 1).
 triangle(Row, Sum) :-
 	PreRow is Row - 1,
 	triangle(PreRow, PreSum),
-	Sum is PreSum + Row.
+	Sum is PreSum + Row..
+ 
 
 /* sum digit */
 sumDigits(0, 0).
@@ -54,7 +55,8 @@ countSeven(N,C) :-
 	PreN is div(N,10),
 	countSeven(PreN,PreS),
 	( ( isSeven(D), C is PreS + 1 );
-	( not(isSeven(D)), C is PreS + 0 ) )
+	( not(isSeven(D)), C is PreS + 0 ) ).
+
 
      
      
