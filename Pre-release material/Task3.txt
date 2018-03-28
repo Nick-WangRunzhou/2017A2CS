@@ -1,0 +1,46 @@
+Task 3.1
+14 character(habib).
+15 character_type(habib, explorer).
+16 pet(habib, fish).
+17 skill(time_travel).
+18 has_skill(habib, time_travel).
+
+Task 3.2
+has_pet(X, Y) if character(X) and animal(Y).
+
+Task 3.3
+character(gradon).
+character(hallen).
+character(jake).
+character_type(gradon, magician).
+character_type(hallen, guardian).
+character_type(jake, roamer).
+pet(gradon, dragon).
+pet(hallen, eagle).
+pet(jake, bear).
+skill(omnipotence).
+skill(immortality).
+skill(teleportation).
+has_skill(gradon, omnipotence).
+has_skill(hallen, immortality).
+has_skill(jake, teleportation).
+
+Task 3.4
+true.
+
+X=princess.
+
+X=jim.
+
+X=invisibility.
+
+X=jim.
+
+Task 3.5
+pet(jim, X).
+
+has_skill(X, fly).
+
+skill(X).
+
+petofprincess(X):- pet(A, B), character_type(A, princess).
